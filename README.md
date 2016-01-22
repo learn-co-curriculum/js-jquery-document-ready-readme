@@ -21,7 +21,7 @@ The first thing we need to do is link `js/script.js` to `index.html`. We do that
 ```html
 <script src="js/script.js"></script>
 ```
-Now that our HTML file can find our JavaScript File, let's remove the `script` tags from the bottom of our HTML file and move them to `js/script.js`.
+Now that our HTML file can find our JavaScript File, let's remove the code between the `script` tags from the bottom of our HTML file and move it to `js/script.js`.
 
 If you save all your changes, and open `index.html` in the browser, you shouldn't see the text `this is so freaking cool.` appear in the browser. That's because we haven't set the jQuery to run yet.
 
