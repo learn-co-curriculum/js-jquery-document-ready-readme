@@ -1,7 +1,7 @@
 tags:
-  - document read
+  - document ready
   -jquery
 languages:
   - jQuery
 resources: 
-  - 0
+  - 2
