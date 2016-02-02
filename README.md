@@ -21,7 +21,7 @@ The first thing we need to do is link `js/script.js` to `index.html`. We do that
 ```html
 <script src="js/script.js"></script>
 ```
-Now that our HTML file can find our JavaScript File, it's remove the `script` tags from the bottom of our HTML file and move them to `js/script.js`.
+Now that our HTML file can find our JavaScript File, let's remove the code between the `script` tags from the bottom of our HTML file and move it to `js/script.js`.
 
 If you save all your changes, and open `index.html` in the browser, you shouldn't see the text `this is so freaking cool.` appear in the browser. That's because we haven't set the jQuery to run yet.
 
@@ -29,7 +29,7 @@ If you save all your changes, and open `index.html` in the browser, you shouldn'
 
 Thankfully, jQuery has a built-in way to determine when a page is loaded. You'll be coding along in `index.html` and `js/script.js`.
 
-In `js/script/js`, we need to set up a document ready in order to detect when our HTML page has loaded, and the document is ready to be manipulated:
+In `js/script.js`, we need to set up a document ready in order to detect when our HTML page has loaded, and the document is ready to be manipulated:
 
 ```js
 $( document ).ready(function() {
@@ -47,3 +47,5 @@ Once jQuery senses the document has loaded, the rest of the code will fire. Plac
 
 + [Learn jQuery](http://learn.jquery.com/using-jquery-core/document-ready/)
 + [jQuery Docs](https://api.jquery.com/ready/)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-document-ready-readme'>Document Ready</a> on Learn.co and start learning to code for free.</p>
