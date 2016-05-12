@@ -31,9 +31,9 @@ In this simple example, you should already see `"this is so freaking cool."` app
 
 ## Document Ready
 
-Thankfully, jQuery has a built-in way to determine when a page is loaded. You'll be coding along in `index.html` and `js/script.js`.
+Thankfully, jQuery has a built-in way to determine when a page is loaded. You'll be coding along in `index.html` and `script.js`.
 
-In `js/script.js`, we need to set up a document ready in order to detect when our HTML page has loaded, and the document is ready to be manipulated:
+In `script.js`, we need to set up a document ready in order to detect when our HTML page has loaded, and the document is ready to be manipulated:
 
 ```js
 $(document).ready(function() {
@@ -43,7 +43,7 @@ $(document).ready(function() {
 
 The `$` is a shortcut for `jQuery`, and provides an interface to the library. Every time you see `$` think jQuery.
 
-Once jQuery senses the document has loaded, the rest of the code will fire. Place the document ready around the jQuery already in `js/script.js`. Save your changes, and refresh in the browser. You should see the text appear in the browser!
+Once jQuery senses the document has loaded, the rest of the code will fire. Place the document ready around the jQuery already in `script.js`. Save your changes, and refresh in the browser. You should see the text appear in the browser!
 
 
 ## Resources
@@ -52,3 +52,5 @@ Once jQuery senses the document has loaded, the rest of the code will fire. Plac
 + [jQuery Docs](https://api.jquery.com/ready/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-document-ready-readme'>Document Ready</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/js-jquery-document-ready-readme'>Document Ready</a> on Learn.co and start learning to code for free.</p>
