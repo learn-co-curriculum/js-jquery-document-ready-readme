@@ -49,6 +49,5 @@ Once the `load` event fires (which we've told jQuery to listen for with `$(docum
 + [Learn jQuery](http://learn.jquery.com/using-jquery-core/document-ready/)
 + [jQuery Docs](https://api.jquery.com/ready/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-jquery-document-ready-readme'>Document Ready</a> on Learn.co and start learning to code for free.</p>
 
 <p class='util--hide'>View <a href='https://learn.co/lessons/js-jquery-document-ready-readme'>Document Ready</a> on Learn.co and start learning to code for free.</p>
