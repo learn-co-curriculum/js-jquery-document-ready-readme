@@ -6,7 +6,7 @@
 
 ## Introduction
 
-We don't ever want to write our JavaScript and jQuery inside our HTML files. For the same reasons that we want to separate out our CSS from our HTML, we want to separate out our JavaScript from our HTML, too.
+We don't ever want to write our JavaScript and jQuery inside our HTML files. For the same reasons that we want to separate our CSS from our HTML, we want to separate out our JavaScript from our HTML, too.
 
 But so far we've written our JavaScript code at the bottom of our HTML `<body>` so that the code would run once the page loads. How can we run our code when it's in a totally different file? We need to guarantee that the HTML document is loaded before our other files are triggered.
 
