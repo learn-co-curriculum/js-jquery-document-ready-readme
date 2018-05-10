@@ -8,7 +8,7 @@
 
 We don't ever want to write our JavaScript and jQuery inside our HTML files. For the same reasons that we want to separate out our CSS from our HTML, we want to separate out our JavaScript from our HTML, too.
 
-But so far we've written our JavaScript code at the bottom of our HTML `<body>` so that the code would run once the page loads. How can we run our code when it's in a totally different file? We need to guarantee that the HTML document is loaded before our other files are triggered.
+Until now, we've written our JavaScript code at the bottom of our HTML `<body>` so that the code would run once the page loads. How can we run our code when it's in a totally different file? We need to guarantee that the HTML document is loaded before our other files are triggered.
 
 
 ## Separating and Linking Code
@@ -17,14 +17,14 @@ If you take a look at `index.html`, you'll notice we have jQuery-flavored JavaSc
 
 The first thing we need to do is load `script.js` in `index.html`. In the olden days (the 1990s and 2000s), we used to import our scripts in the `<head>` of our HTML documents. As our applications grew more interactive, our JavaScript files grew larger and our pages took longer to load. This was because the browser loads _everything_ in between the `<head>` tags before it attempts to render the page. Once the browser gets to `<body>`, it starts to load things in order (synchronously).
 
-When that's just painting tags with the appropriate styles, the browser simply hums along; but when it encounters a `<script>` tag, it either needs to evaluate the script or else make a request to the location specified in the `<script>` tag's `src` attribute. These requests take time, so nowadays, we put all of our `<script>` tags at the bottom of `<body>`, below all of the static HTML content. Go ahead and add a `<script>` tag for "script.js" at the bottom of `<body>`:
+When that's just painting tags with the appropriate styles, the browser simply hums along; but when it encounters a `<script>` tag, it either needs to evaluate the script or else make a request to the location specified in the `<script>` tag's `src` attribute. These requests take time, so nowadays, we put all of our `<script>` tags at the bottom of `<body>`, below all of the static HTML content. Go ahead and add a `<script>` tag with a source of "script.js" at the bottom of `<body>`:
 
 ```html
 <script src="script.js"></script>
 ```
-Now that our HTML file can find our JavaScript File, let's remove the code between the `script` tags from the bottom of our HTML file and move it to `script.js`.
+Now that our HTML file can find our JavaScript file, let's remove the code between the `script` tags from the bottom of our HTML file and move it to `script.js`.
 
-In this simple example, you should already see `"this is so freaking cool."` appended to `div#text`. But normally, it's not safe to execute JavaScript code until the browser tells us it's ready.
+In this simple example, you should see `"this is so freaking cool."` appended to `div#text`. Regardless of it working for us now, it's generally not safe to execute JavaScript code until the browser tells us it's ready.
 
 ## Document Ready
 
