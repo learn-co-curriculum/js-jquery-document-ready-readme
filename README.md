@@ -44,7 +44,7 @@ Go ahead and add a `<script>` tag for "script.js" at the bottom of `<body>`:
 <script src="js/script.js"></script>
 ```
 
-Notice that since `script.js` is in a folder, we include the folde name. Now
+Notice that since `script.js` is in a folder, we include the folder name. Now
 that our HTML file can find our JavaScript File, let's remove the code between
 the `script` tags from the bottom of our HTML file and move it to `script.js`.
 
